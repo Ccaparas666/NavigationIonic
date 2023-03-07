@@ -31,9 +31,13 @@ export class Page1Page implements OnInit {
     const userinput2 = (document.getElementById('user-input2')as HTMLInputElement).value;
     const value2 = Number(userinput2);
 
-    const Valsum = value1 + value2;
+    const Sum = value1 + value2;
+    const Mul = value1 * value2;
+    const Div = value1 / value2;
+    const Sub = value1 - value2;
+    const Mod = value1 % value2;
 
-    this.navCtrl.navigateForward(['/page2',{userinput1, userinput2, Valsum}]);
+    this.navCtrl.navigateForward(['/page2',{userinput1, userinput2, Sum, Mul, Div, Sub, Mod}]);
 
     
   }
